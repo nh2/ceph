@@ -5,10 +5,7 @@ import json
 import logging
 import six
 import threading
-try:
-    from collections.abc import defaultdict
-except ImportError:
-    from collections import defaultdict
+from collections import defaultdict
 import rados
 
 
