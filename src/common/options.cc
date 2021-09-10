@@ -8394,6 +8394,11 @@ std::vector<Option> get_mds_options() {
     .set_flag(Option::FLAG_RUNTIME)
     .set_description("flag to deny all client reconnects during failover"),
 
+    Option("mds_dir_prefetch", Option::TYPE_BOOL, Option::LEVEL_ADVANCED)
+    .set_default(true)
+    .set_flag(Option::FLAG_RUNTIME)
+    .set_description("flag to prefetch entire dir"),
+
     Option("mds_tick_interval", Option::TYPE_FLOAT, Option::LEVEL_ADVANCED)
     .set_default(5)
     .set_description("time in seconds between upkeep tasks"),
